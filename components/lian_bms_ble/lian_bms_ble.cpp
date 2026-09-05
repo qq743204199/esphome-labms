@@ -128,7 +128,7 @@ void LianBmsBle::gattc_event_handler(esp_gattc_cb_event_t event, esp_gatt_if_t g
       ESP_LOGW(TAG, "BLE disconnected reason=0x%02X", param->disconnect.reason);
       break;
     case ESP_GATTC_SEARCH_CMPL_EVT: {
-      for (auto *svc : this->parent_->get_services()) {
+      for (auto *svc : this->parent_->services_) {
         if (!svc) continue;
         svc->parse_characteristics();
         for (auto *ch : svc->characteristics) {
