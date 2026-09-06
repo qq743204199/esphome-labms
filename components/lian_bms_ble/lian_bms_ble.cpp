@@ -134,6 +134,8 @@ void LianBmsBle::gattc_event_handler(esp_gattc_cb_event_t event, esp_gatt_if_t g
         for (auto *ch : svc->characteristics) {
           if (!ch) continue;
           std::string uuid = ch->uuid.to_string();
+          char uuid_buf[37] = {0};
+          std::string uuid = ch->uuid.to_str(std::span<char>(uuid_buf));  
           if (uuid.find("00002760") == std::string::npos) continue;
           ESP_LOGI(TAG, "BMS CHR: handle=0x%04X props=0x%02X uuid=%s", ch->handle, ch->properties, uuid.c_str());
           if (ch->properties & 0x04) {
