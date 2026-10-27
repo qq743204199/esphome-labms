@@ -3,6 +3,9 @@
 一个用于通过 BLE 连接锂安 BMS 的 ESPHome 自定义组件，支持读取电池数据和控制功能。
 
 <img width="1045" height="789" alt="Snipaste_2026-06-03_09-27-46" src="https://github.com/user-attachments/assets/8dd74e08-652a-494e-9514-73ffbc3ccd10" />
+<img width="706" height="777" alt="image" src="https://github.com/user-attachments/assets/72229e64-4422-455b-9a5b-e5b12f4d81b3" />
+<img width="910" height="844" alt="image" src="https://github.com/user-attachments/assets/f516b3b8-3ccf-4760-8cc1-0a7d4242cc67" />
+
 
 
 ## 功能特性
@@ -173,12 +176,6 @@ esp32-lian-bms/
 ## 许可证
 
 本项目采用 MIT 许可证，详见 [LICENSE](LICENSE) 文件。
-
-## 致谢
-
-- 感谢 ESPHome 项目提供的框架
-- 感谢锂安 BMS 提供的硬件支持
-- 感谢社区成员的测试和反馈
 
 ## 联系方式
 
